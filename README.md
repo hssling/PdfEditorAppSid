@@ -2,26 +2,101 @@
 
 An Android app to read, edit, and convert PDF files from scans and other sources, with the ability to edit any aspect of the PDF (text, images, annotations, etc).
 
+---
+
 ## Features
-- Read and display PDF files
-- Edit text, images, and annotations in PDFs
-- Convert images and scans to PDF
-- Modern UI with Jetpack Compose
+
+- **Read and display PDF files**  
+  Open and view any PDF with fast, accessible navigation.
+
+- **Edit PDF Content**
+  - Edit text, images, and annotations directly in PDFs.
+  - Add, remove, or modify text and images on any page.
+  - Draw and insert digital signatures.
+
+- **Batch Processing**
+  - Merge multiple PDFs into a single document.
+  - Split a PDF by page range into multiple files.
+
+- **Scan to PDF**
+  - Capture images using your device camera (CameraX) and convert them to PDF.
+
+- **Accessibility**
+  - Content descriptions for images and interactive elements.
+  - Global dark/light theme toggle.
+  - Font scaling and support for screen readers.
+
+- **Security**
+  - Set and remove passwords for PDF files.
+  - All file operations include robust error handling and user-friendly messages.
+
+- **Modern UI**
+  - Built with Jetpack Compose for a responsive, accessible interface.
+  - Navigation drawer and settings for easy access to all features.
+
+---
 
 ## Tech Stack
-- Kotlin
-- Jetpack Compose
-- PdfBox-Android (PDF handling)
-- CameraX (scanning)
+
+- **Kotlin**
+- **Jetpack Compose** (UI)
+- **PdfBox-Android** (PDF manipulation)
+- **CameraX** (scanning)
+- **Gradle** (build system)
+
+---
 
 ## Getting Started
-1. Open this project in Android Studio.
-2. Sync Gradle files.
-3. Build and run on your Android device or emulator.
+
+1. **Open this project in Android Studio.**
+2. **Sync Gradle files** (Android Studio will prompt if needed).
+3. **Build and run** on your Android device or emulator.
+
+---
+
+## Building from Command Line
+
+To build, lint, and test the app from the command line (after the wrapper is set up):
+
+```sh
+cmd /c gradlew.bat clean assembleRelease lint test
+```
+
+---
 
 ## Dependencies
+
 All required dependencies are defined in the `build.gradle` files.
 
 ---
 
+## Accessibility & UX
+
+- All interactive elements have descriptive content labels.
+- Supports dynamic font scaling and theme switching.
+- Loading indicators and error messages for long-running or failed operations.
+
+---
+
+## Security
+
+- Password protection for PDF files.
+- Secure handling of sensitive operations and files.
+
+---
+
+## Advanced Editing
+
 For advanced PDF editing (e.g., full text and image editing), consider integrating commercial SDKs like PDFTron or PSPDFKit.
+
+---
+
+## License
+
+Add your preferred open-source license here (e.g., MIT, Apache 2.0).
+
+---
+
+## Contributing
+
+Pull requests and issues are welcome! Please open an issue to discuss major changes before submitting a PR.
